@@ -115,11 +115,6 @@
     <chainQuitKey>C-g</chainQuitKey>
     <!-- ######## Global Actions ######## -->
     <!-- Action : ShowMenu -->
-    <keybind key="W-space">
-      <action name="ShowMenu">
-        <menu>root-menu</menu>
-      </action>
-    </keybind>
     <keybind key="A-space">
       <action name="ShowMenu">
         <menu>client-menu</menu>
@@ -394,11 +389,7 @@
     </keybind>
     <!-- Top right-->
     <keybind key="W-k">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>0</y>
-      </action>
+      <action name="Iconify"/>
     </keybind>
     <keybind key="W-S-k">
       <action name="Unmaximize"/>
@@ -444,13 +435,6 @@
       </action>
     </keybind>
     <!-- Bottom right-->
-    <keybind key="W-l">
-      <action name="Unmaximize"/>
-      <action name="MoveResizeTo">
-        <x>-0</x>
-        <y>-0</y>
-      </action>
-    </keybind>
     <keybind key="W-S-l">
       <action name="Unmaximize"/>
       <action name="MoveResizeTo">
@@ -545,9 +529,6 @@
     </keybind>
     <keybind key="A-F4">
       <action name="Close"/>
-    </keybind>
-    <keybind key="A-F5">
-      <action name="Iconify"/>
     </keybind>
     <keybind key="A-F6">
       <action name="ToggleMaximize"/>
@@ -674,17 +655,12 @@
     </keybind>
     <keybind key="W-f">
       <action name="Execute">
-        <command>thunar</command>
-      </action>
-    </keybind>
-    <keybind key="W-w">
-      <action name="Execute">
-        <command>firefox</command>
+        <command>nautilus</command>
       </action>
     </keybind>
     <keybind key="W-e">
       <action name="Execute">
-        <command>geany</command>
+        <command>nano</command>
       </action>
     </keybind>
     <!-- Rofi -->
@@ -703,7 +679,7 @@
         <command>music</command>
       </action>
     </keybind>
-    <keybind key="W-x">
+    <keybind key="W-l">
       <action name="Execute">
         <command>powermenu</command>
       </action>
@@ -726,28 +702,23 @@
     </keybind>
     <keybind key="C-A-v">
       <action name="Execute">
-        <command>alacritty -e vim</command>
+        <command>xfce4-terminal -e vim</command>
       </action>
     </keybind>
     <keybind key="C-A-r">
       <action name="Execute">
-        <command>alacritty -e ranger</command>
+        <command>xfce4-terminal -e ranger</command>
       </action>
     </keybind>
     <keybind key="C-A-h">
       <action name="Execute">
-        <command>alacritty -e htop</command>
+        <command>xfce4-terminal -e htop</command>
       </action>
     </keybind>
     <!-- Misc -->
     <keybind key="C-A-l">
       <action name="Execute">
         <command>betterlockscreen --lock</command>
-      </action>
-    </keybind>
-    <keybind key="W-t">
-      <action name="Execute">
-        <command>ob-furminal</command>
       </action>
     </keybind>
     <keybind key="W-p">
