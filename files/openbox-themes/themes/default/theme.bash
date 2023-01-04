@@ -6,7 +6,7 @@
 
 # Colors
 background='#1E2128'
-foreground='#ABB2BF'
+foreground='#B9BDC4'
 color0='#32363D'
 color1='#E06B74'
 color2='#98C379'
@@ -14,7 +14,7 @@ color3='#E5C07A'
 color4='#62AEEF'
 color5='#C778DD'
 color6='#55B6C2'
-color7='#ABB2BF'
+color7='#B9BDC4'
 color8='#50545B'
 color9='#EA757E'
 color10='#A2CD83'
@@ -25,7 +25,7 @@ color14='#5FC0CC'
 color15='#B5BCC9'
 
 accent='#5294E2'
-light_value='0.05'
+light_value='0.00'
 dark_value='0.30'
 
 # Wallpaper

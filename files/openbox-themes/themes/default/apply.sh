@@ -36,35 +36,35 @@ apply_polybar() {
 	sed -i -e "s/STYLE=.*/STYLE=\"$THEME\"/g" ${PATH_OBTS}/themes/polybar.sh
 
 	# apply default theme fonts
-	sed -i -e "s/font-0 = .*/font-0 = \"$polybar_font\"/g" ${PATH_PBAR}/config.ini
+#	sed -i -e "s/font-0 = .*/font-0 = \"$polybar_font\"/g" ${PATH_PBAR}/config.ini
 
 	# rewrite colors file
-	cat > ${PATH_PBAR}/colors.ini <<- EOF
-		[color]
-		
-		BACKGROUND = ${background}
-		FOREGROUND = ${foreground}
-		ALTBACKGROUND = ${altbackground}
-		ALTFOREGROUND = ${altforeground}
-		ACCENT = ${accent}
-		
-		BLACK = ${color0}
-		RED = ${color1}
-		GREEN = ${color2}
-		YELLOW = ${color3}
-		BLUE = ${color4}
-		MAGENTA = ${color5}
-		CYAN = ${color6}
-		WHITE = ${color7}
-		ALTBLACK = ${color8}
-		ALTRED = ${color9}
-		ALTGREEN = ${color10}
-		ALTYELLOW = ${color11}
-		ALTBLUE = ${color12}
-		ALTMAGENTA = ${color13}
-		ALTCYAN = ${color14}
-		ALTWHITE = ${color15}
-	EOF
+#	cat > ${PATH_PBAR}/colors.ini <<- EOF
+#		[color]
+#
+#		BACKGROUND = ${background}
+#		FOREGROUND = ${foreground}
+#		ALTBACKGROUND = ${altbackground}
+#		ALTFOREGROUND = ${altforeground}
+#		ACCENT = ${accent}
+#
+#		BLACK = ${color0}
+#		RED = ${color1}
+#		GREEN = ${color2}
+#		YELLOW = ${color3}
+#		BLUE = ${color4}
+#		MAGENTA = ${color5}
+#		CYAN = ${color6}
+#		WHITE = ${color7}
+#		ALTBLACK = ${color8}
+#		ALTRED = ${color9}
+#		ALTGREEN = ${color10}
+#		ALTYELLOW = ${color11}
+#		ALTBLUE = ${color12}
+#		ALTMAGENTA = ${color13}
+#		ALTCYAN = ${color14}
+#		ALTWHITE = ${color15}
+#	EOF
 
 	# launch polybar
 	bash ${PATH_OBTS}/themes/polybar.sh
