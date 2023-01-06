@@ -11,5 +11,5 @@ RASI="$DIR/themes/$STYLE/rofi/launcher.rasi"
 rofi \
   -tokenize \
   -show drun \
-	-kb-cancel Alt-F1 \
+	-kb-cancel Escape \
 	-theme ${RASI}

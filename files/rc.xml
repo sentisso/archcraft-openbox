@@ -91,10 +91,10 @@
   </resize>
   <!-- Margin -->
   <margins>
-    <top>48</top>
-    <bottom>10</bottom>
-    <left>10</left>
-    <right>10</right>
+    <top>38</top>
+    <bottom>0</bottom>
+    <left>4</left>
+    <right>4</right>
   </margins>
   <!-- Dock -->
   <dock>
