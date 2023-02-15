@@ -716,11 +716,6 @@
       </action>
     </keybind>
     <!-- Misc -->
-    <keybind key="C-A-l">
-      <action name="Execute">
-        <command>betterlockscreen --lock</command>
-      </action>
-    </keybind>
     <keybind key="W-p">
       <action name="Execute">
         <command>ob-colorpicker</command>
