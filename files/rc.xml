@@ -628,22 +628,22 @@
     <!-- Media Controls -->
     <keybind key="XF86AudioStop">
       <action name="Execute">
-        <command>mpc stop</command>
+        <command>playerctl stop</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPlay">
       <action name="Execute">
-        <command>mpc toggle</command>
+        <command>playerctl play-pause</command>
       </action>
     </keybind>
     <keybind key="XF86AudioPrev">
       <action name="Execute">
-        <command>mpc prev</command>
+        <command>playerctl prev</command>
       </action>
     </keybind>
     <keybind key="XF86AudioNext">
       <action name="Execute">
-        <command>mpc next</command>
+        <command>playerctl next</command>
       </action>
     </keybind>
     <!-- ################################ Launch Applications ################################ -->
