@@ -1,4 +1,6 @@
 cleanup.sh
+.idea/
+*.pkg.tar.zst
 push.sh
 /pkg
 /src

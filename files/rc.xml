@@ -636,6 +636,11 @@
         <command>playerctl play-pause</command>
       </action>
     </keybind>
+    <keybind key="XF86AudioPause">
+      <action name="Execute">
+        <command>playerctl play-pause</command>
+      </action>
+    </keybind>
     <keybind key="XF86AudioPrev">
       <action name="Execute">
         <command>playerctl prev</command>
