@@ -22,6 +22,7 @@ PATH_OBTS="$PATH_CONF/openbox-themes"
 PATH_PBAR="$PATH_OBTS/themes/$THEME/polybar"
 PATH_ROFI="$PATH_OBTS/themes/$THEME/rofi"
 PATH_XFCE="$PATH_CONF/xfce4/terminal"
+PATH_CONKY="$PATH_OBTS/themes/$THEME/conky.conf"
 
 ## Wallpaper ---------------------------------
 apply_wallpaper() {
@@ -231,6 +232,13 @@ apply_obconfig () {
 
 	# Reload Openbox Config
 	openbox --reconfigure
+}
+
+# Conky -------------------------------------
+apply_conky() {
+	cp "${PATH_CONKY}" "${PATH_CONF}/conky/"
+	pkill conky
+	conky &
 }
 
 # Dunst -------------------------------------
