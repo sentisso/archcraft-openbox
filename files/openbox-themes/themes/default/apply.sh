@@ -237,7 +237,8 @@ apply_obconfig () {
 # Conky -------------------------------------
 apply_conky() {
 	cp "${PATH_CONKY}" "${PATH_CONF}/conky/"
-	pkill conky && conky &
+	pkill conky
+	conky &
 }
 
 # Dunst -------------------------------------
