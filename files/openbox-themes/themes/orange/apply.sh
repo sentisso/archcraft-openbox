@@ -352,6 +352,7 @@ apply_terminal
 apply_geany
 apply_appearance
 apply_obconfig
+apply_conky
 apply_dunst
 apply_plank
 apply_compositor
