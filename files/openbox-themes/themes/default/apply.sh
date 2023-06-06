@@ -238,7 +238,7 @@ apply_obconfig () {
 apply_conky() {
 	cp "${PATH_CONKY}" "${PATH_CONF}/conky/"
 	pkill conky
-	conky &
+	conky --daemonize
 }
 
 # Dunst -------------------------------------
