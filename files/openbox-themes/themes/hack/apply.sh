@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
 ##
 ## Script To Apply Themes
 
@@ -69,9 +69,12 @@ apply_polybar() {
 		COLOR_G = ${color_green}
 		COLOR_Y = ${color_yellow}
 	EOF
+}
 
-	# launch polybar
-	bash ${PATH_OBTS}/themes/polybar.sh
+## Tint2 -----------------------------------
+apply_tint2() {
+	# modify tint2 launch script
+	sed -i -e "s/STYLE=.*/STYLE=\"$THEME\"/g" ${PATH_OBTS}/themes/tint2.sh
 }
 
 # Rofi --------------------------------------
@@ -79,6 +82,7 @@ apply_rofi() {
 	# modify rofi scripts
 	sed -i -e "s/STYLE=.*/STYLE=\"$THEME\"/g" \
 		${PATH_OBTS}/scripts/askpass \
+		${PATH_OBTS}/scripts/bluetooth \
 		${PATH_OBTS}/scripts/launcher \
 		${PATH_OBTS}/scripts/music \
 		${PATH_OBTS}/scripts/powermenu \
@@ -342,6 +346,7 @@ notify_user
 create_file
 apply_wallpaper
 apply_polybar
+apply_tint2
 apply_rofi
 apply_netmenu
 apply_terminal
@@ -351,6 +356,9 @@ apply_obconfig
 apply_dunst
 apply_plank
 apply_compositor
+
+# launch polybar / tint2
+bash ${PATH_OBTS}/themes/launch-bar.sh
 
 # fix cursor theme (run it in the end)
 xsetroot -cursor_name left_ptr

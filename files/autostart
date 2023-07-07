@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
 
 ## Kill if already running
 killall -9 xfsettingsd picom polybar dunst ksuperkey xfce4-power-manager aw-qt aw-server
@@ -22,8 +22,8 @@ xfce4-power-manager &
 ## Start Compositing Manager
 exec picom &
 
-## Launch Polybar
-bash ~/.config/openbox-themes/themes/polybar.sh
+## Launch Polybar or Tint2
+bash ~/.config/openbox-themes/themes/launch-bar.sh
 
 ## Notification Daemon
 exec dunst &

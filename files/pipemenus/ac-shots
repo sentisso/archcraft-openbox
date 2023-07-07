@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-## Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com>
+## Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com>
 ##
 ## Openbox Pipemenu to take screenshots with maim
 
@@ -50,7 +50,7 @@ countdown () {
 
 # take shots
 shotnow () {
-	cd ${dir} && maim -u -f png | copy_shot
+	cd ${dir} && sleep 0.5 && maim -u -f png | copy_shot
 	notify_view
 }
 

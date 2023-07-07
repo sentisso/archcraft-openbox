@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<!-- Copyright (C) 2020-2022 Aditya Shakya <adi1090x@gmail.com> -->
+<!-- Copyright (C) 2020-2023 Aditya Shakya <adi1090x@gmail.com> -->
 <!-- ################################ General Settings ################################ -->
 <openbox_config xmlns="http://openbox.org/3.4/rc" xmlns:xi="http://www.w3.org/2001/XInclude">
   <!-- Resistance -->
@@ -677,6 +677,11 @@
     <keybind key="W-n">
       <action name="Execute">
         <command>networkmanager_dmenu</command>
+      </action>
+    </keybind>
+    <keybind key="W-b">
+      <action name="Execute">
+        <command>bluetooth</command>
       </action>
     </keybind>
     <keybind key="W-m">

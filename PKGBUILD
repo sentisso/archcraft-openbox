@@ -1,8 +1,8 @@
 # Maintainer: Aditya Shakya <adi1090x@gmail.com>
 
 pkgname=archcraft-openbox
-pkgver=3.0
-pkgrel=2
+pkgver=4.0
+pkgrel=0
 pkgdesc="Openbox WM Configurations for Archcraft"
 url="https://github.com/archcraft-os/archcraft-openbox"
 arch=('any')
@@ -14,7 +14,7 @@ depends=('openbox' 'obconf'
 		'pulsemixer' 'light' 'xcolor'
 		'xfce4-settings' 'xfce4-power-manager' 'xfce4-terminal'
 		'nitrogen' 'alacritty' 'thunar' 'geany'
-		'rofi' 'polybar' 'dunst'
+		'rofi' 'polybar' 'tint2' 'dunst'
 		'mpd' 'mpc' 'ffmpeg'
 		'maim' 'xclip' 'viewnior'
 		'ksuperkey' 
@@ -71,8 +71,7 @@ package() {
 	# Copy openbox themes
 	cp -r ${srcdir}/openbox-themes 		"$_configdir"
 	chmod +x "$_thdir"/scripts/*
-	chmod +x "$_thdir"/themes/polybar.sh
-	chmod +x "$_thdir"/themes/easy/polybar/polywins.sh
+	chmod +x "$_thdir"/themes/{launch-bar,polybar,tint2}.sh
 
 	apply_files=(`find ${_thdir}/themes -type f | grep apply.sh`)
 	for _afile in "${apply_files[@]}"; do
